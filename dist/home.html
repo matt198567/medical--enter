@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230526233606">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230528210442">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,17 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<a href="/" class="header__logo"><img src="img/logo/logo.svg" alt="Logo" /></a>
+					<a data-goto-header data-goto=".hero" href="/" class="header__logo"><img src="img/logo/logo.svg" alt="Logo" /></a>
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="" class="menu__link">Головна</a>
+								<a data-goto-header data-goto=".hero" href="" class="menu__link">Головна</a>
 							</li>
 							<li class="menu__item">
 								<a href="" class="menu__link">Новини</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Відгуки</a>
+								<a data-goto-header data-goto=".reviews" href="" class="menu__link">Відгуки</a>
 							</li>
 							<li class="menu__item">
 								<a href="" class="menu__link">Контакти</a>
@@ -35,19 +35,7 @@
 							<li class="menu__item">
 								<div data-spollers class="menu__spollers">
 									<div class="menu__item">
-										<a href="" class="menu__link">Послуги</a>
-										<button type="button" data-spoller class="phones-header__arrow _icon-keyboard_arrow_down"></button>
-										<ul class="phones-header__list">
-											<li>
-												<a href="" class="phones-header__phone">Послуги</a>
-											</li>
-											<li>
-												<a href="" class="phones-header__phone">Послуги</a>
-											</li>
-											<li>
-												<a href="" class="phones-header__phone">Послуги</a>
-											</li>
-										</ul>
+										<a data-goto-header data-goto=".services" href="" class="menu__link">Послуги</a>
 									</div>
 								</div>
 							</li>
@@ -126,9 +114,7 @@
 			</section>
 			<section class="page__advantages advantages">
 				<div class="advantages__container">
-					<h2 class="advantages__title title">
-						<span>Чому обирають саме нас</span>
-					</h2>
+					<h2 class="advantages__title title">Чому обирають саме нас</h2>
 					<ul class="advantages__items items-advantages">
 						<li class="advantages__item item-advantages">
 							<div class="item-advantages__icon">
@@ -207,7 +193,7 @@
 			</section>
 			<section class="page__reviews reviews">
 				<div class="reviews__container">
-					<h2 class="reviews__title title"><span>Відгуки клієнтів</span></h2>
+					<h2 class="reviews__title title">Відгуки клієнтів</h2>
 					<div class="reviews__slider swiper">
 						<div class="reviews__wrapper swiper-wrapper">
 							<div class="reviews__slide swiper-slide">
@@ -284,13 +270,102 @@
 					</div>
 				</div>
 			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<h2 class="services__title title">
+						Ми створюємо більше, ніж красу
+					</h2>
+					<div class="services__inner">
+						<div class="services__links">
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+						</div>
+						<div class="services__images">
+							<a data-video-id="LhjRfnCJnoM" href="https://www.youtube.com/embed/LhjRfnCJnoM" class="services__image-ibg active">
+								<picture><source srcset="img/services/image.01.webp" type="image/webp"><img src="img/services/image.01.jpg" alt="Image" /></picture>
+							</a>
+							<a data-video-id="-qn-6dd--vY" href="https://www.youtube.com/embed/-qn-6dd--vY" class="services__image-ibg">
+								<picture><source srcset="img/services/image.02.webp" type="image/webp"><img src="img/services/image.02.jpg" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.03.webp" type="image/webp"><img src="img/services/image.03.jpg" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.04.webp" type="image/webp"><img src="img/services/image.04.jpg" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.05.webp" type="image/webp"><img src="img/services/image.05.png" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.06.webp" type="image/webp"><img src="img/services/image.06.jpg" alt="Image" /></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__documentation documentation">
+				<div class="documentation__container">
+					<h2 class="documentation__title title">Документація</h2>
+					<div class="documentation__slider swiper">
+						<div class="documentation__wrapper swiper-wrapper">
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide-reviews__dotts"></div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230526233606"></script>
+	<script src="js/app.min.js?_v=20230528210442"></script>
 </body>
 
 </html>
