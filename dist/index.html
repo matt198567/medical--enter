@@ -1,179 +1,450 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230530214351">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «medical-сenter»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «medical-сenter»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
-		</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a data-goto-header data-goto=".hero" href="/" class="header__logo"><img src="img/logo/logo.svg" alt="Logo" /></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Новини</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-header data-goto=".reviews" href="" class="menu__link">Відгуки</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакти</a>
+							</li>
+							<li class="menu__item">
+								<div data-spollers class="menu__spollers">
+									<div class="menu__item">
+										<a data-goto-header data-goto=".services" href="" class="menu__link">Послуги</a>
+									</div>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Акції</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Вартість</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Галерея</a>
+							</li>
+							<li class="menu__item">
+								<div data-spollers class="menu__spollers">
+									<div class="menu__item">
+										<a href="" class="menu__link">Відділення</a>
+										<button type="button" data-spoller class="phones-header__arrow _icon-keyboard_arrow_down"></button>
+										<ul class="phones-header__inner">
+											<li>
+												<a href="" class="phones-header__phone">Поліклініка </a>
+												<p class="phones-header__text">(вул. Рейтарська, 22)</p>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Поліклініка </a>
+												<p class="phones-header__text">(вул. Пушкінська, 22А)</p>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Приймальні</a>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Стаціонарні</a>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Хірургічне</a>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Реабілітації</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="menu__item">
+								<div data-spollers class="menu__spollers">
+									<div class="menu__item">
+										<a href="" class="menu__link">Спеціалісти</a>
+										<button type="button" data-spoller class="phones-header__arrow _icon-keyboard_arrow_down"></button>
+										<ul class="phones-header__inner">
+											<li>
+												<a href="" class="phones-header__phone">Спеціалісти</a>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Спеціалісти</a>
+											</li>
+											<li>
+												<a href="" class="phones-header__phone">Спеціалісти</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<div data-spollers class="menu__phones phones-header">
+						<div class="phones-header__items">
+							<div class="phones-header__item">
+								<a href="tel:380677774967" class="phones-header__phone">
+									<span>+38-067-777-49-67</span>
+								</a>
+								<button type="button" data-spoller class="phones-header__arrow _icon-keyboard_arrow_down"></button>
+								<ul class="phones-header__list">
+									<li>
+										<a href="tel:380677774969" class="phones-header__phone">
+											+38-067-777-49-69
+										</a>
+									</li>
+									<li>
+										<a href="tel:380677774977" class="phones-header__phone">
+											+38-067-777-49-77
+										</a>
+									</li>
+									<li>
+										<a href="tel:380677774937" class="phones-header__phone">
+											+38-067-777-49-37
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menu__social">
+						<a href="" class="menu__icon menu__icon-1 _icon-youtube"></a>
+						<a href="" class="menu__icon _icon-facebook"></a>
+						<a href="" class="menu__icon _icon-instagram"></a>
+					</div>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__image-ibg">
+					<picture><source srcset="img/hero/fon.webp" type="image/webp"><img src="img/hero/fon.jpg" alt="Image" /></picture>
+				</div>
+			</section>
+			<section class="page__advantages advantages">
+				<div class="advantages__container">
+					<h2 class="advantages__title title">Чому обирають саме нас</h2>
+					<ul class="advantages__items items-advantages">
+						<li class="advantages__item item-advantages">
+							<div class="item-advantages__icon">
+								<img src="img/advantages/icons.01.svg" alt="Icon" />
+							</div>
+							<h3 class="item-advantages__title">ДОСВІД</h3>
+							<p class="item-advantages__text text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Aliquam dolores facere beatae saepe soluta eligendi
+								necessitatibus. Maxime nostrum corporis sint, odio commodi
+								architecto est officiis qui consequatur odit doloribus magni.
+							</p>
+						</li>
+						<li class="advantages__item item-advantages">
+							<div class="item-advantages__icon">
+								<img src="img/advantages/icons.02.svg" alt="Icon" />
+							</div>
+							<h3 class="item-advantages__title">БЕЗПЕКА</h3>
+							<p class="item-advantages__text text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Aliquam dolores facere beatae saepe soluta eligendi
+								necessitatibus. Maxime nostrum corporis sint, odio commodi
+								architecto est officiis qui consequatur odit doloribus magni.
+							</p>
+						</li>
+						<li class="advantages__item item-advantages">
+							<div class="item-advantages__icon">
+								<img src="img/advantages/icons.03.svg" alt="Icon" />
+							</div>
+							<h3 class="item-advantages__title">РОЗТАШУВАННЯ</h3>
+							<p class="item-advantages__text text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Aliquam dolores facere beatae saepe soluta eligendi
+								necessitatibus. Maxime nostrum corporis sint, odio commodi
+								architecto est officiis qui consequatur odit doloribus magni.
+							</p>
+						</li>
+						<li class="advantages__item item-advantages">
+							<div class="item-advantages__icon">
+								<img src="img/advantages/icons.04.svg" alt="Icon" />
+							</div>
+							<h3 class="item-advantages__title">КОМАНДА</h3>
+							<p class="item-advantages__text text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Aliquam dolores facere beatae saepe soluta eligendi
+								necessitatibus. Maxime nostrum corporis sint, odio commodi
+								architecto est officiis qui consequatur odit doloribus magni.
+							</p>
+						</li>
+						<li class="advantages__item item-advantages">
+							<div class="item-advantages__icon">
+								<img src="img/advantages/icons.05.svg" alt="Icon" />
+							</div>
+							<h3 class="item-advantages__title">РОЗРОБКИ</h3>
+							<p class="item-advantages__text text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Aliquam dolores facere beatae saepe soluta eligendi
+								necessitatibus. Maxime nostrum corporis sint, odio commodi
+								architecto est officiis qui consequatur odit doloribus magni.
+							</p>
+						</li>
+						<li class="advantages__item item-advantages">
+							<div class="item-advantages__icon">
+								<img src="img/advantages/icons.06.svg" alt="Icon" />
+							</div>
+							<h3 class="item-advantages__title">ЧАС</h3>
+							<p class="item-advantages__text text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Aliquam dolores facere beatae saepe soluta eligendi
+								necessitatibus. Maxime nostrum corporis sint, odio commodi
+								architecto est officiis qui consequatur odit doloribus magni.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Відгуки клієнтів</h2>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="slide-reviews__inner">
+									<h3 class="slide-reviews__title">Мілана</h3>
+									<a data-video-id="QYwI3LRCnRE" href="https://www.youtube.com/embed/QYwI3LRCnRE" class="slide-reviews__image-ibg">
+										<!-- <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/QYwI3LRCnRE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe> -->
+										<picture><source srcset="img/reviews/plug.01.webp" type="image/webp"><img src="img/reviews/plug.01.png" alt="ClientImage" /></picture>
+									</a>
+									<a href="" class="slide-reviews__link">Боріс Джонсон</a>
+									<a href="" class="slide-reviews__link">Підтяжка грудей</a>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="slide-reviews__inner">
+									<h3 class="slide-reviews__title">Мілана</h3>
+									<a href="" class="slide-reviews__image-ibg">
+										<picture><source srcset="img/reviews/plug.02.webp" type="image/webp"><img src="img/reviews/plug.02.jpg" alt="ClientImage" /></picture>
+									</a>
+									<a href="" class="slide-reviews__link">Боріс Джонсон</a>
+									<a href="" class="slide-reviews__link">Підтяжка грудей</a>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="slide-reviews__inner">
+									<h3 class="slide-reviews__title">Мілана</h3>
+									<a href="" class="slide-reviews__image-ibg">
+										<picture><source srcset="img/reviews/plug.03.webp" type="image/webp"><img src="img/reviews/plug.03.png" alt="ClientImage" /></picture>
+									</a>
+									<a href="" class="slide-reviews__link">Боріс Джонсон</a>
+									<a href="" class="slide-reviews__link">Підтяжка грудей</a>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="slide-reviews__inner">
+									<h3 class="slide-reviews__title">Мілана</h3>
+									<a href="" class="slide-reviews__image-ibg">
+										<picture><source srcset="img/reviews/plug.04.webp" type="image/webp"><img src="img/reviews/plug.04.png" alt="ClientImage" /></picture>
+									</a>
+									<a href="" class="slide-reviews__link">Боріс Джонсон</a>
+									<a href="" class="slide-reviews__link">Підтяжка грудей</a>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="slide-reviews__inner">
+									<h3 class="slide-reviews__title">Мілана</h3>
+									<a href="" class="slide-reviews__image-ibg">
+										<picture><source srcset="img/reviews/plug.05.webp" type="image/webp"><img src="img/reviews/plug.05.png" alt="ClientImage" /></picture>
+									</a>
+									<a href="" class="slide-reviews__link">Боріс Джонсон</a>
+									<a href="" class="slide-reviews__link">Підтяжка грудей</a>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="slide-reviews__inner">
+									<h3 class="slide-reviews__title">Мілана</h3>
+									<a href="" class="slide-reviews__image-ibg">
+										<picture><source srcset="img/reviews/plug.06.webp" type="image/webp"><img src="img/reviews/plug.06.jpg" alt="ClientImage" /></picture>
+									</a>
+									<a href="" class="slide-reviews__link">Боріс Джонсон</a>
+									<a href="" class="slide-reviews__link">Підтяжка грудей</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide-reviews__dotts"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<h2 class="services__title title">
+						Ми створюємо більше, ніж красу
+					</h2>
+					<div class="services__inner">
+						<div class="services__links">
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+							<a href="" class="services__link">Послуги</a>
+						</div>
+						<div class="services__images">
+							<a data-video-id="LhjRfnCJnoM" href="https://www.youtube.com/embed/LhjRfnCJnoM" class="services__image-ibg active">
+								<picture><source srcset="img/services/image.01.webp" type="image/webp"><img src="img/services/image.01.jpg" alt="Image" /></picture>
+							</a>
+							<a data-video-id="-qn-6dd--vY" href="https://www.youtube.com/embed/-qn-6dd--vY" class="services__image-ibg">
+								<picture><source srcset="img/services/image.02.webp" type="image/webp"><img src="img/services/image.02.jpg" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.03.webp" type="image/webp"><img src="img/services/image.03.jpg" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.04.webp" type="image/webp"><img src="img/services/image.04.jpg" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.05.webp" type="image/webp"><img src="img/services/image.05.png" alt="Image" /></picture>
+							</a>
+							<a href="" class="services__image-ibg">
+								<picture><source srcset="img/services/image.06.webp" type="image/webp"><img src="img/services/image.06.jpg" alt="Image" /></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__documentation documentation">
+				<div class="documentation__container">
+					<h2 class="documentation__title title">Документація</h2>
+					<div class="documentation__slider swiper">
+						<div class="documentation__wrapper swiper-wrapper">
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+							<div class="documentation__slide swiper-slide">
+								<div class="slide-documentation__inner">
+									<a href="#" class="slide-documentation__image-ibg">
+										<picture><source srcset="img/documentation/image.01.webp" type="image/webp"><img src="img/documentation/image.01.jpg" alt="DocumentImage" /></picture>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide-reviews__dotts"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main main-footer">
+					<a data-goto-header data-goto=".hero" href="/" class="footer__logo"><img src="img/logo/logo.svg" alt="Logo" /></a>
+					<div class="main-footer__address">
+						<h3 class="main-footer__title">Адреса</h3>
+						<p class="main-footer__text">Центр працює Пн - Сб: 09:00 - 19:00</p>
+						<div class="main-footer__inner">
+							<a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A0%D0%B5%D0%B9%D1%82%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+22,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.452473,30.510419,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4ce5c0e41c757:0x72862e6e2851aec4!8m2!3d50.452473!4d30.510419!16s%2Fg%2F11c5mpftps?entry=ttu" class="main-footer__link" target="_blank">м. Київ вул. Рейтарська, 22</a>
+							<a href="mailto:info@info.com.ua" class="main-footer__mail">info@info.com.ua</a>
+						</div>
+					</div>
+					<div class="main-footer__contacts">
+						<h3 class="main-footer__title">Телефони</h3>
+						<div class="main-footer__inner">
+							<a href="tel:77777777" class="main-footer__phone">777-777-77</a>
+							<a href="tel:77777777" class="main-footer__phone">777-777-77</a>
+						</div>
+						<ul class="main-footer__items">
+							<li class="main-footer__item">
+								<a href="" class="main-footer__icon">
+									<img src="img/footer/icons/icon.01.svg" alt="Viber" />
+								</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="" class="main-footer__icon">
+									<img src="img/footer/icons/icon.02.svg" alt="WhatsApp" />
+								</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="" class="main-footer__icon">
+									<img src="img/footer/icons/icon.03.svg" alt="Telegram" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="main-footer__navigation">
+						<h3 class="main-footer__title">Назва</h3>
+						<nav class="main-footer__body">
+							<ul class="main-footer__list">
+								<li class="main-footer__item">
+									<a data-goto-header data-goto=".reviews" href="" class="main-footer__link">Відгуки</a>
+								</li>
+								<li class="main-footer__item">
+									<a href="" class="main-footer__link">Галерея</a>
+								</li>
+								<li class="main-footer__item">
+									<a data-goto-header data-goto=".services" href="" class="main-footer__link">Послуги</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	</div>
+	<script src="js/app.min.js?_v=20230530214351"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
