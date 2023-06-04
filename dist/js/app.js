@@ -4028,6 +4028,28 @@
     links.forEach((link => {
         link.addEventListener("click", handleClick);
     }));
+    const buttons = document.querySelectorAll(".services__btn");
+    const script_spollers = document.querySelectorAll(".spollers");
+    for (let i = 1; i < script_spollers.length; i++) {
+        const spoller = script_spollers[i];
+        spoller.style.display = "none";
+    }
+    buttons.forEach(((button, index) => {
+        button.addEventListener("click", (() => {
+            const filter = button.getAttribute("data-filter");
+            buttons.forEach((btn => {
+                btn.classList.remove("active");
+            }));
+            button.classList.add("active");
+            script_spollers.forEach(((spoller, i) => {
+                if (spoller.getAttribute("data-filter") === filter) spoller.style.display = "block"; else spoller.style.display = "none";
+            }));
+        }));
+        if (index === 0) {
+            button.classList.add("active");
+            script_spollers[0].style.display = "block";
+        }
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
