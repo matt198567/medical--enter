@@ -360,6 +360,12 @@ body {
 .menu__item {
   position: relative;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__link {
@@ -439,7 +445,7 @@ body {
 .phones-header__inner {
   position: absolute;
   top: 100%;
-  width: 150%;
+  width: 120%;
   left: 0;
   background-color: #1cb8a3;
   padding: 0.5rem;
@@ -963,15 +969,6 @@ body {
     row-gap: 0.3125rem;
   }
 
-  .menu__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .menu__link {
     color: #34495e;
   }
@@ -1195,6 +1192,7 @@ body {
 @media (max-width: 47.99875em) {
   .spollers__title {
     font-weight: 500;
+    font-size: 0.875rem;
   }
 
   .menu__body {
@@ -1208,7 +1206,7 @@ body {
     -o-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     background-color: #594ecc;
-    padding: 9.375rem 0.9375rem 1.875rem 0.9375rem;
+    padding: 8.125rem 0.9375rem 1.875rem 0.9375rem;
   }
 
   .menu__body::before {
@@ -1233,6 +1231,19 @@ body {
     left: 0;
   }
 
+  .menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .menu__item {
+    border-bottom: 1px solid rgba(230, 230, 230, 0.753);
+  }
+
   .menu__item:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -1240,6 +1251,11 @@ body {
   .menu__link {
     color: #fff;
     font-size: 1.5rem;
+    padding: 0rem 0rem 1.25rem 0rem;
+  }
+
+  .phones-header__arrow {
+    color: #fff;
   }
 
   .phones-header__list {
