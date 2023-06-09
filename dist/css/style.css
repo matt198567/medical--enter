@@ -858,11 +858,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 0.1875rem;
 }
 
 .services__text {
@@ -1185,6 +1183,10 @@ body {
     margin-bottom: 2.5rem;
   }
 
+  .branchone__text_additional {
+    margin-bottom: 1.875rem;
+  }
+
   .branchone__inner {
     margin-top: 3.75rem;
   }
@@ -1297,6 +1299,10 @@ body {
 
   .branchone__title:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+
+  .branchone__text_additional {
+    margin-bottom: 0.625rem;
   }
 
   .branchone__inner {
@@ -1502,7 +1508,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 0.625rem;
   }
 
   .services__btn {
@@ -1830,6 +1835,18 @@ body {
 @supports not (margin-bottom: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 2.5rem )) {
     .branchone__title:not(:last-child) {
       margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.625rem , 0.1704545455rem  +  2.2727272727vw , 1.875rem )) {
+    .branchone__text_additional {
+      margin-bottom: clamp( 0.625rem , 0.1704545455rem  +  2.2727272727vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.625rem , 0.1704545455rem  +  2.2727272727vw , 1.875rem )) {
+    .branchone__text_additional {
+      margin-bottom: calc(0.625rem + 1.25 * (100vw - 20rem) / 55);
     }
 }
 

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230608211252">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230609212321">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -149,6 +149,11 @@
 							<li class="services__item">
 								<button data-filter="laboratory" type="button" class="services__btn">
 									Лабораторні дослідження
+								</button>
+							</li>
+							<li class="services__item">
+								<button data-filter="diagnostics" type="button" class="services__btn">
+									Функціональна діагностика
 								</button>
 							</li>
 							<li class="services__item">
@@ -507,88 +512,33 @@
 								</div>
 							</div>
 						</div>
-						<div class="spollers__item">
-							<button type="button" data-spoller class="spollers__title">
-								Функціональна діагностика
-							</button>
-							<div class="spollers__body">
-								<div class="services__wrapper">
-									<p class="services__text">
-										ЕКГ-дослідження у 12 відведеннях, яке проводиться в
-										кабінеті
-									</p>
-									<p class="services__text">200 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">Ритмограма</p>
-									<p class="services__text">200 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Реоенцефалографія 4 відведення (2 ділянки) з ручною
-										розшифровкою у спокої
-									</p>
-									<p class="services__text">300 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Добовий моніторинг артеріального тиску
-									</p>
-									<p class="services__text">400 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Холтеровський моніторинг ЕКГ (1 доба)
-									</p>
-									<p class="services__text">600 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Холтеровський моніторинг ЕКГ та артеріального тиску (1
-										доба)
-									</p>
-									<p class="services__text">1000 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Ехокардіографія в М і В режимах з доплерівським аналізом
-									</p>
-									<p class="services__text">600 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Вимір артеріального тиску та пульсу (одноразово)
-									</p>
-									<p class="services__text">50 грн.</p>
-								</div>
-							</div>
-						</div>
-						<div class="spollers__item">
-							<button type="button" data-spoller class="spollers__title">
-								Покращене харчування в умовах стаціонарного лікування
-							</button>
-							<div class="spollers__body">
-								<div class="services__wrapper">
-									<p class="services__text">
-										Покращене харчування (за час перебування в стаціонарі
-										протягом 1 доби)
-									</p>
-									<p class="services__text">230 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">Сніданок</p>
-									<p class="services__text">45 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">Обід</p>
-									<p class="services__text">115 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">Вечеря</p>
-									<p class="services__text">70 грн.</p>
-								</div>
-							</div>
-						</div>
+
+						<!-- <div class="spollers__item">
+                <button type="button" data-spoller class="spollers__title">
+                  Покращене харчування в умовах стаціонарного лікування
+                </button>
+                <div class="spollers__body">
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Покращене харчування (за час перебування в стаціонарі
+                      протягом 1 доби)
+                    </p>
+                    <p class="services__text">230 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">Сніданок</p>
+                    <p class="services__text">45 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">Обід</p>
+                    <p class="services__text">115 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">Вечеря</p>
+                    <p class="services__text">70 грн.</p>
+                  </div>
+                </div>
+              </div> -->
 					</div>
 					<div data-filter="ultrasound" data-spollers data-one-spoller class="spollers">
 						<div class="spollers__item">
@@ -1446,66 +1396,126 @@
 								</div>
 							</div>
 						</div>
+						<!-- <div class="spollers__item">
+                <button type="button" data-spoller class="spollers__title">
+                  Ін'єкції
+                </button>
+                <div class="spollers__body">
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Забір крові з пальця для лабораторних аналізів
+                    </p>
+                    <p class="services__text">20 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Забір крові з вени для лабораторних аналізів
+                    </p>
+                    <p class="services__text">50 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Постановка периферичного венозного катетера
+                    </p>
+                    <p class="services__text">100 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Ін'єкція внутрішньошкірна (вартість медикаментів
+                      сплачується додатково)
+                    </p>
+                    <p class="services__text">40 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Ін'єкція підшкірна (вартість медикаментів сплачується
+                      додатково)
+                    </p>
+                    <p class="services__text">40 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Ін'єкція внутрішньом'язова (вартість медикаментів
+                      сплачується додатково)
+                    </p>
+                    <p class="services__text">40 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Ін'єкція внутрішньовенна краплинна (вартість медикаментів
+                      сплачується додатково)
+                    </p>
+                    <p class="services__text">150 грн.</p>
+                  </div>
+                  <div class="services__wrapper">
+                    <p class="services__text">
+                      Ін'єкція внутрішньовенна струминна (вартість медикаментів
+                      сплачується додатково)
+                    </p>
+                    <p class="services__text">80 грн.</p>
+                  </div>
+                </div>
+              </div> -->
+					</div>
+					<div data-filter="diagnostics" data-spollers data-one-spoller class="spollers">
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">
-								Ін'єкції
+								Функціональна діагностика
 							</button>
 							<div class="spollers__body">
 								<div class="services__wrapper">
 									<p class="services__text">
-										Забір крові з пальця для лабораторних аналізів
+										ЕКГ-дослідження у 12 відведеннях, яке проводиться в
+										кабінеті
 									</p>
-									<p class="services__text">20 грн.</p>
+									<p class="services__text">200 грн.</p>
+								</div>
+								<div class="services__wrapper">
+									<p class="services__text">Ритмограма</p>
+									<p class="services__text">200 грн.</p>
 								</div>
 								<div class="services__wrapper">
 									<p class="services__text">
-										Забір крові з вени для лабораторних аналізів
+										Реоенцефалографія 4 відведення (2 ділянки) з ручною
+										розшифровкою у спокої
+									</p>
+									<p class="services__text">300 грн.</p>
+								</div>
+								<div class="services__wrapper">
+									<p class="services__text">
+										Добовий моніторинг артеріального тиску
+									</p>
+									<p class="services__text">400 грн.</p>
+								</div>
+								<div class="services__wrapper">
+									<p class="services__text">
+										Холтеровський моніторинг ЕКГ (1 доба)
+									</p>
+									<p class="services__text">600 грн.</p>
+								</div>
+								<div class="services__wrapper">
+									<p class="services__text">
+										Холтеровський моніторинг ЕКГ та артеріального тиску (1
+										доба)
+									</p>
+									<p class="services__text">1000 грн.</p>
+								</div>
+								<div class="services__wrapper">
+									<p class="services__text">
+										Ехокардіографія в М і В режимах з доплерівським аналізом
+									</p>
+									<p class="services__text">600 грн.</p>
+								</div>
+								<div class="services__wrapper">
+									<p class="services__text">
+										Вимір артеріального тиску та пульсу (одноразово)
 									</p>
 									<p class="services__text">50 грн.</p>
 								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Постановка периферичного венозного катетера
-									</p>
-									<p class="services__text">100 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Ін'єкція внутрішньошкірна (вартість медикаментів
-										сплачується додатково)
-									</p>
-									<p class="services__text">40 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Ін'єкція підшкірна (вартість медикаментів сплачується
-										додатково)
-									</p>
-									<p class="services__text">40 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Ін'єкція внутрішньом'язова (вартість медикаментів
-										сплачується додатково)
-									</p>
-									<p class="services__text">40 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Ін'єкція внутрішньовенна краплинна (вартість медикаментів
-										сплачується додатково)
-									</p>
-									<p class="services__text">150 грн.</p>
-								</div>
-								<div class="services__wrapper">
-									<p class="services__text">
-										Ін'єкція внутрішньовенна струминна (вартість медикаментів
-										сплачується додатково)
-									</p>
-									<p class="services__text">80 грн.</p>
-								</div>
 							</div>
 						</div>
+					</div>
+					<div data-filter="other" data-spollers data-one-spoller class="spollers">
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">
 								Фізіотерапевтична реабілітація
@@ -1578,8 +1588,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div data-filter="other" data-spollers data-one-spoller class="spollers">
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">
 								Інші послуги
@@ -1834,7 +1842,7 @@
 									<a data-goto-header data-goto=".reviews" href="" class="main-footer__link">Відгуки</a>
 								</li>
 								<li class="main-footer__item">
-									<a href="" class="main-footer__link">Галерея</a>
+									<a href="" class="main-footer__link">Новини</a>
 								</li>
 								<li class="main-footer__item">
 									<a data-goto-header data-goto=".services" href="" class="main-footer__link">Послуги</a>
@@ -1847,7 +1855,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20230608211252"></script>
+	<script src="js/app.min.js?_v=20230609212321"></script>
 </body>
 
 </html>
