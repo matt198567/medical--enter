@@ -966,6 +966,7 @@ body {
 .branchone__text {
   font-family: sans-serif;
   line-height: 1.2222222222;
+  font-size: 1rem;
 }
 
 .branchone__inner {
@@ -1001,6 +1002,7 @@ body {
 
 .branchone__list {
   font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .branchone__item:not(:last-child) {
@@ -1029,6 +1031,11 @@ body {
 .branchtwo__text {
   font-family: sans-serif;
   line-height: 1.2222222222;
+  font-size: 1rem;
+}
+
+.branchtwo__text_else {
+  margin-bottom: 0.3125rem;
 }
 
 .branchtwo__inner {
@@ -1051,12 +1058,9 @@ body {
   max-width: 100%;
 }
 
-.branchtwo__wrapper {
-  margin-left: 3.125rem;
-}
-
 .branchtwo__list {
   font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .branchtwo__item:not(:last-child) {
@@ -1146,6 +1150,10 @@ body {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .branchtwo__wrapper {
+    margin-left: 3.125rem;
   }
 }
 
@@ -1679,22 +1687,18 @@ body {
 
   .branchone__text {
     font-weight: 400;
-    font-size: 1rem;
   }
 
   .branchone__list {
     font-weight: 400;
-    font-size: 1rem;
   }
 
   .branchtwo__text {
     font-weight: 400;
-    font-size: 1rem;
   }
 
   .branchtwo__list {
     font-weight: 400;
-    font-size: 1rem;
   }
 }
 
