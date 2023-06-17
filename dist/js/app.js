@@ -4050,6 +4050,11 @@
             script_spollers[0].style.display = "block";
         }
     }));
+    const cards = document.querySelectorAll(".card");
+    function flipCard() {
+        this.classList.toggle("is-flipped");
+    }
+    cards.forEach((card => card.addEventListener("click", flipCard)));
     window["FLS"] = true;
     isWebp();
     menuInit();

@@ -1130,16 +1130,149 @@ body {
 }
 
 .doctors__image-ibg {
-  padding-bottom: 33.8983050847%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 22.8813559322%;
-          flex: 0 0 22.8813559322%;
-  border-radius: 0.625rem;
+  overflow: hidden;
+  border-radius: 0.3125rem;
+  -webkit-transition: opacity 0.5s ease 0s;
+  -o-transition: opacity 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s;
 }
 
 .doctors__image-ibg img {
+  overflow: hidden;
   width: 100%;
   border-radius: 0.3125rem;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.doctors__scene {
+  width: 200px;
+  height: 260px;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.doctors__card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.doctors__card_face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.doctors__wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(241, 241, 245, 0.74);
+  border-radius: 0px 0px 5px 5px;
+  padding: 0.3125rem;
+  width: 100%;
+  height: 5rem;
+}
+
+.doctors__name {
+  color: #34495e;
+  text-align: center;
+  font-weight: 600;
+  -webkit-transition: color 0.5s ease 0s;
+  -o-transition: color 0.5s ease 0s;
+  transition: color 0.5s ease 0s;
+}
+
+.doctors__name:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.doctors__job {
+  color: black;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.scene {
+  width: 270px;
+  height: 460px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.3125rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card__inner {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 0.625rem;
+}
+
+.card__mail:not(:last-child) {
+  margin-bottom: 0.3125rem;
+}
+
+.card__phone:not(:last-child) {
+  margin-bottom: 0.3125rem;
+}
+
+.card__text:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.card__text_additional {
+  margin-top: 2.5rem;
+}
+
+.card__face--back {
+  background: gray;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .swiper {
@@ -1230,6 +1363,13 @@ body {
   .branchtwo__wrapper {
     margin-left: 3.125rem;
   }
+
+  .doctors__image-ibg {
+    padding-bottom: 0%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 38.5714285714%;
+            flex: 0 0 38.5714285714%;
+  }
 }
 
 @media (min-width: 47.99875em) and (min-width: 75em) {
@@ -1249,6 +1389,22 @@ body {
   .branchtwo__inner {
     -ms-grid-columns: 1fr 68.0555555556%;
     grid-template-columns: 1fr 68.0555555556%;
+  }
+
+  .doctors__image-ibg {
+    padding-bottom: 1%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 27.5510204082%;
+            flex: 0 0 27.5510204082%;
+  }
+}
+
+@media (min-width: 75rem) {
+  .doctors__image-ibg {
+    padding-bottom: 1%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22.8813559322%;
+            flex: 0 0 22.8813559322%;
   }
 }
 
@@ -1801,10 +1957,15 @@ body {
   }
 
   .doctors__image-ibg {
-    padding-bottom: 66.7741935484%;
+    padding-bottom: 0%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 43.5483870968%;
-            flex: 0 0 43.5483870968%;
+        -ms-flex: 0 0 80.4347826087%;
+            flex: 0 0 80.4347826087%;
+  }
+
+  .scene {
+    max-width: 400px;
+    height: 28.125rem;
   }
 }
 
@@ -2386,5 +2547,20 @@ body {
 
   .branchone__link:hover {
     color: #597797;
+  }
+
+  .doctors__image-ibg:hover .doctors__name {
+    color: #1cb8a3;
+  }
+
+  .doctors__image-ibg:hover {
+    overflow: hidden;
+    border-radius: 0.3125rem;
+  }
+
+  .doctors__image-ibg:hover img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
