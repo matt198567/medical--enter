@@ -4055,6 +4055,19 @@
         this.classList.toggle("is-flipped");
     }
     cards.forEach((card => card.addEventListener("click", flipCard)));
+    const filterButtons = document.querySelectorAll(".doctors__btn");
+    const contentItems = document.querySelectorAll(".doctors__inner");
+    for (let i = 1; i < contentItems.length; i++) contentItems[i].style.display = "none";
+    filterButtons.forEach((button => {
+        button.addEventListener("click", (() => {
+            filterButtons.forEach((btn => btn.classList.remove("active")));
+            button.classList.add("active");
+            const filterValue = button.getAttribute("data-filter");
+            contentItems.forEach((item => {
+                if (item.getAttribute("data-filter") === filterValue) item.style.display = "flex"; else item.style.display = "none";
+            }));
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

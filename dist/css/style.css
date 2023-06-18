@@ -1094,6 +1094,27 @@ body {
   background-color: #f4f4f4;
 }
 
+.doctors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.1875rem;
+}
+
+.doctors__btn {
+  color: #34495e;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 1.25rem 0.625rem;
+  -webkit-box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .doctors__headline {
   font-weight: 600;
   font-size: 1.375rem;
@@ -1591,6 +1612,10 @@ body {
   .doctors__title:not(:last-child) {
     margin-bottom: 2.5rem;
   }
+
+  .doctors__menu:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (max-width: 20em) {
@@ -1751,6 +1776,10 @@ body {
   }
 
   .doctors__title:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .doctors__menu:not(:last-child) {
     margin-bottom: 1.25rem;
   }
 }
@@ -1977,6 +2006,20 @@ body {
 
   .branchtwo__list {
     font-weight: 400;
+  }
+
+  .doctors__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .doctors__btn {
+    width: 100%;
   }
 }
 
@@ -2485,6 +2528,18 @@ body {
       margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 55);
     }
 }
+
+@supports (margin-bottom: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 2.5rem )) {
+    .doctors__menu:not(:last-child) {
+      margin-bottom: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 2.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 2.5rem )) {
+    .doctors__menu:not(:last-child) {
+      margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 55);
+    }
+}
 }
 
 @media (min-width: 47.99875em) and (min-width: 48em) and (max-width: 75em) {
@@ -2571,6 +2626,11 @@ body {
 
   .branchone__link:hover {
     color: #597797;
+  }
+
+  .doctors__btn:hover,
+  .doctors__btn.active {
+    background-color: #1cb8a3;
   }
 
   .doctors__image-ibg:hover .doctors__name {

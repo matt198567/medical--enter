@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230618160615">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230618174034">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,8 +134,22 @@
 			<section class="page__doctors doctors">
 				<div class="doctors__container">
 					<h2 class="doctors__title title">Спеціалісти</h2>
-					<h3 class="doctors__headline">Відділення ендокринної хірургії</h3>
-					<div class="doctors__inner">
+					<nav class="doctors__menu">
+						<ul class="doctors__list">
+							<li class="doctors__item">
+								<button data-filter="departmentone" type="button" class="doctors__btn active">
+									Відділення ендокринної хірургії
+								</button>
+							</li>
+							<li>
+								<button data-filter="departmenttwo" type="button" class="doctors__btn">
+									ВЗЕП та ОР
+								</button>
+							</li>
+						</ul>
+					</nav>
+					<!-- <h3 class="doctors__headline">Відділення ендокринної хірургії</h3> -->
+					<div data-filter="departmentone" class="doctors__inner">
 						<div class="doctors__image-ibg">
 							<div class="scene scene--card">
 								<div class="card">
@@ -782,6 +796,113 @@
 							</div>
 						</div>
 					</div>
+					<div data-filter="departmenttwo" class="doctors__inner">
+						<div class="doctors__image-ibg">
+							<div class="scene scene--card">
+								<div class="card">
+									<div class="card__face card__face--front">
+										<picture><source srcset="img/department-02/image.01.webp" type="image/webp"><img src="img/department-02/image.01.jpg" alt="ImageDoctors" /></picture>
+										<div class="doctors__wrap">
+											<p class="doctors__name">Мельник Діана Петрівна</p>
+											<p class="doctors__job">
+												Лікар-ендокринолог вищої категорії
+											</p>
+										</div>
+									</div>
+									<div class="card__face card__face--back">
+										<div class="card__inner">
+											<p class="card__text card__text_additional">
+												Напрям діяльності – лікування цукрового діабету,
+												захворювань пара- та щитоподібної залоз, органів
+												гіпоталамо-гіпофізарної системи, наднирників, ожиріння
+												ендокринного генезу.
+											</p>
+											<p class="card__text">Стаж роботи – 22 роки.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__image-ibg">
+							<div class="scene scene--card">
+								<div class="card">
+									<div class="card__face card__face--front">
+										<picture><source srcset="img/department-02/image.02.webp" type="image/webp"><img src="img/department-02/image.02.jpg" alt="ImageDoctors" /></picture>
+										<div class="doctors__wrap">
+											<p class="doctors__name">Приймак Микола Миколайович</p>
+											<p class="doctors__job">Лікар-ендокринолог</p>
+										</div>
+									</div>
+									<div class="card__face card__face--back">
+										<div class="card__inner">
+											<p class="card__text card__text_additional">
+												Напрям діяльності – лікування цукрового діабету,
+												захворювань пара- та щитоподібної залоз, органів
+												гіпоталамо-гіпофізарної системи, наднирників, ожиріння
+												ендокринного генезу.
+											</p>
+											<p class="card__text">Стаж роботи – 2 роки.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__image-ibg">
+							<div class="scene scene--card">
+								<div class="card">
+									<div class="card__face card__face--front">
+										<picture><source srcset="img/department-02/image.03.webp" type="image/webp"><img src="img/department-02/image.03.jpg" alt="ImageDoctors" /></picture>
+										<div class="doctors__wrap">
+											<p class="doctors__name">Сташенко Інна Миколаївна</p>
+											<p class="doctors__job">
+												Лікар-ендокринолог вищої категорії
+											</p>
+											<p class="doctors__job">
+												Лікар-терапевт вищої категорії
+											</p>
+										</div>
+									</div>
+									<div class="card__face card__face--back">
+										<div class="card__inner">
+											<p class="card__text card__text_additional">
+												Напрям діяльності – лікування цукрового діабету,
+												захворювань пара- та щитоподібної залоз, органів
+												гіпоталамо-гіпофізарної системи, наднирників, ожиріння
+												ендокринного генезу.
+											</p>
+											<p class="card__text">Стаж роботи – 24 роки.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__image-ibg">
+							<div class="scene scene--card">
+								<div class="card">
+									<div class="card__face card__face--front">
+										<picture><source srcset="img/department-02/image.04.webp" type="image/webp"><img src="img/department-02/image.04.jpg" alt="ImageDoctors" /></picture>
+										<div class="doctors__wrap">
+											<p class="doctors__name">Тепла Олена Валеріївна</p>
+											<p class="doctors__job">
+												Лікар-ендокринолог вищої категорії
+											</p>
+										</div>
+									</div>
+									<div class="card__face card__face--back">
+										<div class="card__inner">
+											<p class="card__text card__text_additional">
+												Напрям діяльності – лікування цукрового діабету,
+												захворювань пара- та щитоподібної залоз, органів
+												гіпоталамо-гіпофізарної системи, наднирників, ожиріння
+												ендокринного генезу.
+											</p>
+											<p class="card__text">Стаж роботи – 32 роки.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -842,7 +963,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20230618160615"></script>
+	<script src="js/app.min.js?_v=20230618174034"></script>
 </body>
 
 </html>
