@@ -1207,8 +1207,6 @@ body {
 }
 
 .scene {
-  width: 270px;
-  height: 460px;
   cursor: pointer;
   overflow: hidden;
   border-radius: 0.3125rem;
@@ -1248,12 +1246,24 @@ body {
   padding: 0.625rem;
 }
 
+.card__mail {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
 .card__mail:not(:last-child) {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__phone {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .card__phone:not(:last-child) {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.5rem;
 }
 
 .card__text:not(:last-child) {
@@ -1261,10 +1271,11 @@ body {
 }
 
 .card__text_additional {
-  margin-top: 2.5rem;
+  margin-top: 1.875rem;
 }
 
 .card__face--back {
+  overflow-y: scroll;
   background: gray;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -1323,6 +1334,13 @@ body {
   display: none !important;
 }
 
+@media (min-width: 29.99875em) {
+  .scene {
+    width: 18.125rem;
+    height: 28.75rem;
+  }
+}
+
 @media (min-width: 47.99875em) {
   .menu__list {
     display: -webkit-box;
@@ -1367,8 +1385,8 @@ body {
   .doctors__image-ibg {
     padding-bottom: 0%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 38.5714285714%;
-            flex: 0 0 38.5714285714%;
+        -ms-flex: 0 0 37.7604166667%;
+            flex: 0 0 37.7604166667%;
   }
 }
 
@@ -1392,10 +1410,10 @@ body {
   }
 
   .doctors__image-ibg {
-    padding-bottom: 1%;
+    padding-bottom: 1.5151515152%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 27.5510204082%;
-            flex: 0 0 27.5510204082%;
+        -ms-flex: 0 0 29.2929292929%;
+            flex: 0 0 29.2929292929%;
   }
 }
 
@@ -1405,6 +1423,11 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 22.8813559322%;
             flex: 0 0 22.8813559322%;
+  }
+
+  .scene {
+    width: 16.875rem;
+    height: 28.75rem;
   }
 }
 
@@ -1955,18 +1978,6 @@ body {
   .branchtwo__list {
     font-weight: 400;
   }
-
-  .doctors__image-ibg {
-    padding-bottom: 0%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 80.4347826087%;
-            flex: 0 0 80.4347826087%;
-  }
-
-  .scene {
-    max-width: 400px;
-    height: 28.125rem;
-  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
@@ -1978,6 +1989,20 @@ body {
 @media (max-width: 47.99875em) and (max-width: 20em) {
   .hero {
     padding-top: 4.375rem;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .doctors__image-ibg {
+    padding-bottom: 0%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 77.0833333333%;
+            flex: 0 0 77.0833333333%;
+  }
+
+  .scene {
+    width: 16.875rem;
+    height: 28.125rem;
   }
 }
 
@@ -2562,5 +2587,13 @@ body {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
+  }
+
+  .card__mail:hover {
+    color: #1cb8a3;
+  }
+
+  .card__phone:hover {
+    color: #1cb8a3;
   }
 }
