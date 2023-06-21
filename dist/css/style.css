@@ -557,6 +557,60 @@ body {
   color: #1061be;
 }
 
+.main-footer__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-footer__left {
+  fill: #3e29ff;
+  margin-left: 10px;
+  -webkit-animation: animate150 1500ms infinite 1500ms;
+          animation: animate150 1500ms infinite 1500ms;
+}
+
+.main-footer__right {
+  fill: #ffd706;
+  margin-right: 10px;
+  -webkit-animation: animate150 1500ms infinite 750ms;
+          animation: animate150 1500ms infinite 750ms;
+}
+
+@-webkit-keyframes animate150 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate150 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .main-footer__phone {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
