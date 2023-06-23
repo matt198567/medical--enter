@@ -1609,6 +1609,10 @@ body {
     margin-bottom: 1.25rem;
   }
 
+  .branchone__text_add {
+    margin-top: 1.25rem;
+  }
+
   .branchone__inner {
     margin-top: 3.75rem;
   }
@@ -1773,6 +1777,10 @@ body {
 
   .branchone__text_additional {
     margin-bottom: 0.625rem;
+  }
+
+  .branchone__text_add {
+    margin-top: 0.625rem;
   }
 
   .branchone__inner {
@@ -2435,6 +2443,18 @@ body {
 @supports not (margin-bottom: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
     .branchone__text_additional {
       margin-bottom: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (margin-top: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
+    .branchone__text_add {
+      margin-top: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem );
+    }
+}
+
+@supports not (margin-top: clamp( 0.625rem , 0.3977272727rem  +  1.1363636364vw , 1.25rem )) {
+    .branchone__text_add {
+      margin-top: calc(0.625rem + 0.625 * (100vw - 20rem) / 55);
     }
 }
 
